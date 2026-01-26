@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "rudr/category-filter",
+  "version": "1.0.0",
+  "title": "Category Filter",
+  "category": "theme",
+  "description": "Displays a category filter.",
+  "keywords": [
+    "taxonomy",
+    "category",
+    "tags",
+    "filter",
+    "query"
+  ],
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false,
+    "anchor": false,
+    "interactivity": true,
+    "typography": {
+      "fontSize": true,
+      "textAlign": false
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "__experimentalDefaultControls": {
+        "padding": true,
+        "margin": true
+      }
+    },
+    "position": {
+      "sticky": true
+    }
+  },
+  "ancestor": [
+    "core/query"
+  ],
+  "usesContext": [
+    "queryId",
+    "query",
+    "enhancedPagination"
+  ],
+  "attributes": {
+    "textAlign": {
+      "type": "string"
+    },
+    "filterType": {
+      "type": "string",
+      "default": "dropdown"
+    },
+    "showCount": {
+      "type": "boolean",
+      "default": false
+    },
+    "allItemsText": {
+      "type": "string"
+    }
+  },
+  "textdomain": "category-filter-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}
