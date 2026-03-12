@@ -27,7 +27,7 @@ if( ! empty( $attributes[ 'textAlign' ] ) ) {
 	<?php
 
 		$key = isset( $block->context[ 'queryId' ] ) && ! $is_main_query ? "filter-{$block->context[ 'queryId' ]}-category" : "filter-category";
-		$all_items = ! empty( $attributes[ 'allItemsText' ] ) ? $attributes[ 'allItemsText' ] : __( 'All categories', 'category-filter-block' );
+		$all_items = ! empty( $attributes[ 'allItemsText' ] ) ? $attributes[ 'allItemsText' ] : __( 'All categories', 'category-filter-block-fork' );
 
 		$args = array(
 			'taxonomy' => 'category',

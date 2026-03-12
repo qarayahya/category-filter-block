@@ -9,9 +9,9 @@
  * Author URI:        https://github.com/qarayahya
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       category-filter-block
+ * Text Domain:       category-filter-block-fork
  *
- * @package           category-filter-block
+ * @package           category-filter-block-fork
  */
 
 
@@ -37,9 +37,9 @@ if( ! class_exists( 'Rudr_Category_Filter_Block' ) ) {
 		public function init() {
 			register_block_type_from_metadata( __DIR__ . '/build' );
 
-			load_plugin_textdomain( 'category-filter-block', false, plugin_basename( __DIR__ ) . '/languages' );
+			load_plugin_textdomain( 'category-filter-block-fork', false, plugin_basename( __DIR__ ) . '/languages' );
 
-			wp_set_script_translations( 'rudr-category-filter-editor-script', 'category-filter-block', plugin_dir_path( __FILE__ ) . '/languages/' );
+			wp_set_script_translations( 'rudr-category-filter-editor-script', 'category-filter-block-fork', plugin_dir_path( __FILE__ ) . '/languages/' );
 		}
 
 
